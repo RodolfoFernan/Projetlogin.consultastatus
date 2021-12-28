@@ -1,0 +1,8 @@
+# Projetlogin.consultastatus
+ login com acesso a ferramentas de busca para status do produto.
+ login autorizando ou não o acesso a bancos de dados.
+ utilzando html, css, javascript e php com maysql.
+ 
+ login with access to search tools for product status.
+ login authorizing access to databases or not.
+ using html, css, javascript and php with maysql.
