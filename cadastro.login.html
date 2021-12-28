@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    
+    <link rel="stylesheet" type="text/css"   href="estilo.css">
+    <style>
+        body{
+            background-color: aliceblue;
+        }  
+        h1,h2,h3{
+            text-align: center;
+            
+        }  
+        .login{
+    width: 320;
+    height: 420;
+    border: 2px  ;
+    border-radius: 80px 0px 80px 0px;
+    color: yellow;
+    
+    background-color:rgba(0,0, 5,0.8 );
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 68px 28px;
+}
+.usuario{
+    border: 50%;
+    position: absolute;
+    top: -50px;
+    left: 112px;
+}
+    h2{
+        margin: 0;
+        padding-top: 0;
+        padding-left: 0 ;
+        padding-bottom: 20px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        text-align: left;
+        font-size: 25px;
+    
+}
+h1{
+    text-align:center ;
+
+
+}
+.login h3 {
+     margin: 0;
+     padding: 0;
+     font-weight: 21px;
+}
+.login input{
+    width: 100%;
+    margin: 10px;
+}
+.login input[type="text"], input[type="password"]{
+
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline:none ;
+    height: 40px;
+    color: white;
+    font-size: 26px;
+}
+.login input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #000;
+    background: #fff;
+    border-radius: 20px;
+    transition:0.2s ;
+    font-size: 26px;
+
+}
+.login input[type="submit"] :hover{
+    cursor:pointer;
+    background: #ff4d4d;
+    transition: 0.2s;
+}
+.login a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    color: #4b4b4b;
+    transition: 0.2s;
+}
+.login a:hover {
+    transition: 0.2s;
+    color: #ff4d4d;
+}
+.corpo-form {
+
+    text-align: center;
+}        
+     </style> 
+</head>
+<body>
+    <main>
+       <header>
+           <div class="login">
+               <nav>
+                   
+        <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAABYCAMAAAD4HZhbAAAAY1BMVEX/zADUBRH/0QDRABL/2ADriQrumQr/zgDpggvYKhD7vwXVGxH9ygLZQRDtkQr/0wDnegzaNRD4tgbjaQ30qwf9xQPcSw/zpgjsjQrofgvulQndUA/lbg31sAffWQ7hXw7xoAjIvPuBAAAB4ElEQVRoge2VW3uDIAyGMTqDhxq1pR42W///rxxWgrbWi7mr7cl7FQLJ90ACKCUIgiAIgiAIgiAIgvCPQdiAyJPes16Iq5jjsnm8YTAuHzlH36CCup8HRb7E9PlRXTqHWwL9ECbNjhrRBM4+0xLTHd0wxWHwhnAShoubC2NSdHVTJ6KeYz7poCzW4VvdILBFNJmT/SKMSl5nIPUhSyP8ENBlWXZ6prN2yRtGhGWHChveekOQ8Zr6qKwVJiLT9hNFDBQNc/6piH6Hj8I6q6PoxnZx9JQfICbcMFPzzFSKmncFuBK1LHv/lezU0KyFVHH/2iK+6/McGraT/GenTNEapMI3jB3m5kGKhPlManGmncRI8WDJs065e6+gDbKFsK79cSaVIykpKrNkxiCkzs5aoDP7PdmJSp8yGPcOAU26QkGyqWF4i2D07QuKEvYTFNuih2adcffwIa5OnptvziVNoAlTHnT2wbi7JbagdNrKjnRdElbN7n6HtmDGSG86517b0nJ7XSNbF54aQOEYvAZ8kS4W2t0rjRd+JnR3UfrDM3naiyH7UA3OrQ2qnOfH6dqAadqPJ9Tg800p95+S1b+HCl6YH77Vj/f8FU63fRPxPNyTFQRBEARBEARBEARB+It8Az8HH6WcgXVHAAAAAElFTkSuQmCC" alt=""></h1>
+       <h2><a href="https://www.siimp.com.br/wp/siinergy/?gclid=CjwKCAiAtouOBhA6EiwA2nLKH5ZEEJCIWMJyO8M9e6L5f3-IlFaRtYXcbhTAB2MlzL3FZYcQNrPeEBoCmz4QAvD_BwE"><img src="https://www.siimp.com.br/wp/wp-content/uploads/elementor/thumbs/logo-white-header-pfg89e1egqws40iqknoyts6zlv914tjgo4yepr3d0a.png" alt=""></a></h2>
+</nav>
+        <form action="processa.php" method="post">
+            
+            <h3>Usuario</h3>
+            <input type="text" name="nome" placeholder="Nome completo" maxlength="30">
+            <input type="text" name="telefone" placeholder="Telefone " maxlength="30">
+            <input type="email" name="email" placeholder=" E-mail de usuario" maxlength="40">
+           
+            <h3>senha</h3>
+            <input type="password" name="senha " placeholder="Insira sua senha" maxlength="30">
+            <input type="password" name="confSenha " placeholder="Confirma senha " maxlength="15">
+           
+            <h3>Enviar </h3>
+            <input type="submit"name="" value="Cadastrar">
+            
+             </form>
+        </div>
+       </header>
+     </main>
+   </body>
+</HTml>
